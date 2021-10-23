@@ -11,7 +11,7 @@ export interface IProject extends Document {
     title: string;
     description: string;
     labels: string[];
-    imgName: string;
+    imgLink: string;
     link: string; 
 }
 
@@ -29,7 +29,7 @@ const ProjectSchema = new Schema({
         type: [String],
         required: true
     },
-    imgName: {
+    imgLink: {
         type: String,
         required: true
     },
