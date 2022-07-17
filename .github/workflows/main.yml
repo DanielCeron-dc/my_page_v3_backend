@@ -23,5 +23,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
-      - name: Deploy to Heroku
-        uses: AkhileshNS/heroku-deploy@v3.12.12
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "my_page_v3_backend" #Must be unique in Heroku
+          heroku_email: "desceron@unicauca.edu.co"
