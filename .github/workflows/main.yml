@@ -29,3 +29,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "my-page-v3" #Must be unique in Heroku
           heroku_email: "desceron@unicauca.edu.co"
+          branch: "master"
